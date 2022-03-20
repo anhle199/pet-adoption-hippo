@@ -35,7 +35,10 @@ struct PageNavigationButtonsView: View {
                     .font(.system(size: 20, weight: .semibold))
             }
             .frame(width: 120, height: 60)
-            .background(Color.primaryDark)
+            .background(
+                Color.primaryDark
+                    .opacity(isFirstPage ? 0.5 : 1)
+            )
             .cornerRadius(30, corners: [.topRight, .bottomRight])
             .disabled(isFirstPage)
             
