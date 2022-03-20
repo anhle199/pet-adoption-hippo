@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		E6B10F5627E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */; };
-		E6B10F5827E6B37A00D666CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F5727E6B37A00D666CE /* ContentView.swift */; };
+		E6B10F5827E6B37A00D666CE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F5727E6B37A00D666CE /* WelcomeView.swift */; };
 		E6B10F5A27E6B37C00D666CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B10F5927E6B37C00D666CE /* Assets.xcassets */; };
 		E6B10F5D27E6B37C00D666CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B10F5C27E6B37C00D666CE /* Preview Assets.xcassets */; };
+		E6B10F6927E6B5AE00D666CE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F6827E6B5AE00D666CE /* Color+Extension.swift */; };
+		E6B10F6B27E6B5DF00D666CE /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F6A27E6B5DF00D666CE /* Pet.swift */; };
+		E6B10F6D27E6BE1000D666CE /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F6C27E6BE1000D666CE /* View+RoundedCorner.swift */; };
+		E6B10F6F27E6C44100D666CE /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F6E27E6C44100D666CE /* SplashPage.swift */; };
+		E6B10F7127E6CF9F00D666CE /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F7027E6CF9F00D666CE /* PagingView.swift */; };
+		E6B10F7327E6CFD600D666CE /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F7227E6CFD600D666CE /* PageControlView.swift */; };
+		E6B10F7527E6D03C00D666CE /* PageNavigationButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F7427E6D03C00D666CE /* PageNavigationButtonsView.swift */; };
+		E6B10F7D27E6D25200D666CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F7C27E6D25200D666CE /* HomeView.swift */; };
+		E6B10F7F27E6D28E00D666CE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F7E27E6D28E00D666CE /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E6B10F5227E6B37A00D666CE /* SwiftUI-Pet-Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Pet-Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Pet_AdoptionApp.swift; sourceTree = "<group>"; };
-		E6B10F5727E6B37A00D666CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6B10F5727E6B37A00D666CE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E6B10F5927E6B37C00D666CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B10F5C27E6B37C00D666CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6B10F6827E6B5AE00D666CE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E6B10F6A27E6B5DF00D666CE /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		E6B10F6C27E6BE1000D666CE /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
+		E6B10F6E27E6C44100D666CE /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		E6B10F7027E6CF9F00D666CE /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		E6B10F7227E6CFD600D666CE /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		E6B10F7427E6D03C00D666CE /* PageNavigationButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNavigationButtonsView.swift; sourceTree = "<group>"; };
+		E6B10F7C27E6D25200D666CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E6B10F7E27E6D28E00D666CE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,11 @@
 		E6B10F5427E6B37A00D666CE /* SwiftUI-Pet-Adoption */ = {
 			isa = PBXGroup;
 			children = (
-				E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */,
-				E6B10F5727E6B37A00D666CE /* ContentView.swift */,
-				E6B10F5927E6B37C00D666CE /* Assets.xcassets */,
+				E6B10F6327E6B57F00D666CE /* App */,
+				E6B10F6527E6B58900D666CE /* Resources */,
+				E6B10F6627E6B59600D666CE /* Extensions */,
+				E6B10F6727E6B59F00D666CE /* Models */,
+				E6B10F6427E6B58500D666CE /* Views */,
 				E6B10F5B27E6B37C00D666CE /* Preview Content */,
 			);
 			path = "SwiftUI-Pet-Adoption";
@@ -65,6 +85,77 @@
 				E6B10F5C27E6B37C00D666CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6B10F6327E6B57F00D666CE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E6B10F6427E6B58500D666CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F7827E6D0F500D666CE /* Other */,
+				E6B10F7727E6D0F000D666CE /* Core */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6B10F6527E6B58900D666CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F5927E6B37C00D666CE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6B10F6627E6B59600D666CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F6827E6B5AE00D666CE /* Color+Extension.swift */,
+				E6B10F6C27E6BE1000D666CE /* View+RoundedCorner.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E6B10F6727E6B59F00D666CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F6A27E6B5DF00D666CE /* Pet.swift */,
+				E6B10F6E27E6C44100D666CE /* SplashPage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6B10F7627E6D0E400D666CE /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F7027E6CF9F00D666CE /* PagingView.swift */,
+				E6B10F7227E6CFD600D666CE /* PageControlView.swift */,
+				E6B10F7427E6D03C00D666CE /* PageNavigationButtonsView.swift */,
+				E6B10F7E27E6D28E00D666CE /* SplashView.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		E6B10F7727E6D0F000D666CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F5727E6B37A00D666CE /* WelcomeView.swift */,
+				E6B10F7C27E6D25200D666CE /* HomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E6B10F7827E6D0F500D666CE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E6B10F7627E6D0E400D666CE /* Page */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B10F5827E6B37A00D666CE /* ContentView.swift in Sources */,
+				E6B10F6D27E6BE1000D666CE /* View+RoundedCorner.swift in Sources */,
+				E6B10F7F27E6D28E00D666CE /* SplashView.swift in Sources */,
+				E6B10F6F27E6C44100D666CE /* SplashPage.swift in Sources */,
+				E6B10F5827E6B37A00D666CE /* WelcomeView.swift in Sources */,
+				E6B10F7127E6CF9F00D666CE /* PagingView.swift in Sources */,
+				E6B10F7327E6CFD600D666CE /* PageControlView.swift in Sources */,
+				E6B10F6B27E6B5DF00D666CE /* Pet.swift in Sources */,
+				E6B10F7527E6D03C00D666CE /* PageNavigationButtonsView.swift in Sources */,
+				E6B10F7D27E6D25200D666CE /* HomeView.swift in Sources */,
+				E6B10F6927E6B5AE00D666CE /* Color+Extension.swift in Sources */,
 				E6B10F5627E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
