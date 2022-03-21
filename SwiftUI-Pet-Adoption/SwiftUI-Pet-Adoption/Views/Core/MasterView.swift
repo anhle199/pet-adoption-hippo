@@ -12,7 +12,7 @@ struct MasterView: View {
     @State private var selectedType: TabBarView.TabBarType = .home
     
     init() {
-        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().backgroundColor = .clear
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()

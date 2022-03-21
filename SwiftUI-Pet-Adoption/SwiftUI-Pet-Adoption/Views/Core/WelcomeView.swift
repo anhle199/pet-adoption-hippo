@@ -38,6 +38,7 @@ struct WelcomeView: View {
                     selectedIndex: $selectedIndex,
                     numberOfPages: numberOfPages
                 )
+                .padding(.bottom)
             }
         }
     }

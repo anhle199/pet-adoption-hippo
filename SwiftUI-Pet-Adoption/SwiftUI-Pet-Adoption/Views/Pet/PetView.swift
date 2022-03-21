@@ -11,61 +11,71 @@ struct PetView: View {
     
     let pet: Pet
     @State private var isFavorite = true
+    @State private var showDetail = false
     
     var isMale: Bool { pet.gender == .male }
     
     var body: some View {
-        VStack(spacing: 0) {
-            ZStack(alignment: .topTrailing) {
-                Image(pet.images.first ?? "photo")
-                    .resizable()
-                    .frame(height: 160)
-                    .cornerRadius(16, corners: [.topLeft, .topRight])
-                
-                Button {
-                    isFavorite.toggle()
-                } label: {
-                    Image(systemName: isFavorite ? "heart.fill" : "heart")
-                        .foregroundColor(.primaryDark)
-                        .frame(width: 32, height: 32)
-                        .background(.white)
-                        .clipShape(Circle())
-                        .shadow(color: .black.opacity(0.3), radius: 1, x: 0, y: 0)
-                        .padding(10)
+        ZStack {
+            NavigationLink("", isActive: $showDetail) {
+                PetDetailView(pet: pet, isFavorite: $isFavorite)
+            }
+            
+            VStack(spacing: 0) {
+                ZStack(alignment: .topTrailing) {
+                    Image(pet.images.first ?? "photo")
+                        .resizable()
+                        .frame(height: 160)
+                        .cornerRadius(16, corners: [.topLeft, .topRight])
+                    
+                    Button {
+                        isFavorite.toggle()
+                    } label: {
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            .foregroundColor(.primaryDark)
+                            .frame(width: 32, height: 32)
+                            .background(.white)
+                            .clipShape(Circle())
+                            .shadow(color: .black.opacity(0.3), radius: 1, x: 0, y: 0)
+                            .padding(10)
+                    }
                 }
-            }
-            
-            HStack {
-                Text(pet.displayType)
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(isMale ? .primaryYellow : .primaryColor)
-                    .frame(width: 70, height: 22)
-                    .background(
-                        isMale ? Color.secondaryYellow : Color.primaryLight
-                    )
-                    .cornerRadius(11)
                 
-                Spacer()
+                HStack {
+                    Text(pet.displayType)
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(isMale ? .primaryYellow : .primaryColor)
+                        .frame(width: 70, height: 22)
+                        .background(
+                            isMale ? Color.secondaryYellow : Color.primaryLight
+                        )
+                        .cornerRadius(11)
+                    
+                    Spacer()
+                    
+                    Image(pet.gender.rawValue)
+                }
+                .padding(10)
                 
-                Image(pet.gender.rawValue)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(pet.name)
+                        .font(.system(size: 18, weight: .medium))
+                    
+                    Text(pet.breed.description)
+                        .font(.system(size: 14, weight: .regular))
+                }
+                .foregroundColor(.darkText)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding([.horizontal, .bottom], 10)
             }
-            .padding(10)
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text(pet.name)
-                    .font(.system(size: 18, weight: .medium))
-                
-                Text(pet.breed.description)
-                    .font(.system(size: 14, weight: .regular))
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(Color.lightGrey, lineWidth: 1)
+            )
+            .onTapGesture {
+                showDetail.toggle()
             }
-            .foregroundColor(.darkText)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding([.horizontal, .bottom], 10)
         }
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.lightGrey, lineWidth: 1)
-        )
     }
     
 }
