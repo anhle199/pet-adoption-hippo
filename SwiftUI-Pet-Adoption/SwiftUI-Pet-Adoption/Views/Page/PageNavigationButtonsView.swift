@@ -12,6 +12,8 @@ struct PageNavigationButtonsView: View {
     @Binding var selectedIndex: Int
     private let maxIndex: Int
     
+    @State private var showHomeView = false
+    
     init(selectedIndex: Binding<Int>, numberOfPages: Int) {
         self._selectedIndex = selectedIndex
         self.maxIndex = numberOfPages - 1
@@ -49,7 +51,7 @@ struct PageNavigationButtonsView: View {
                     if !isLastPage {
                         selectedIndex += 1
                     } else {
-                        // open home screen
+                        showHomeView.toggle()
                     }
                 }
             } label: {
@@ -60,6 +62,9 @@ struct PageNavigationButtonsView: View {
             .frame(width: 120, height: 60)
             .background(Color.white)
             .cornerRadius(30, corners: [.topLeft, .bottomLeft])
+            .fullScreenCover(isPresented: $showHomeView) {
+                MasterView()
+            }
         }
     }
     

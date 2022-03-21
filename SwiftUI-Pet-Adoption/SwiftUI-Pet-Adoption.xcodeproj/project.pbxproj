@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6857D5E27E7911000A7D865 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6857D5D27E7911000A7D865 /* PetView.swift */; };
+		E6857D6027E7946800A7D865 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6857D5F27E7946800A7D865 /* MasterView.swift */; };
+		E6857D6227E79DA700A7D865 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6857D6127E79DA700A7D865 /* TabBarView.swift */; };
+		E6857D6627E79E2E00A7D865 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6857D6527E79E2E00A7D865 /* TabBarItem.swift */; };
+		E697BA8127E73C4F008A7CC2 /* PetSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697BA8027E73C4F008A7CC2 /* PetSearchBar.swift */; };
+		E697BA8327E73CF7008A7CC2 /* PetTypeSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697BA8227E73CF7008A7CC2 /* PetTypeSegmentedView.swift */; };
+		E697BA8527E78003008A7CC2 /* PetGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697BA8427E78003008A7CC2 /* PetGridView.swift */; };
 		E6B10F5627E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */; };
 		E6B10F5827E6B37A00D666CE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B10F5727E6B37A00D666CE /* WelcomeView.swift */; };
 		E6B10F5A27E6B37C00D666CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B10F5927E6B37C00D666CE /* Assets.xcassets */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6857D5D27E7911000A7D865 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
+		E6857D5F27E7946800A7D865 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		E6857D6127E79DA700A7D865 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E6857D6527E79E2E00A7D865 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		E697BA8027E73C4F008A7CC2 /* PetSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSearchBar.swift; sourceTree = "<group>"; };
+		E697BA8227E73CF7008A7CC2 /* PetTypeSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypeSegmentedView.swift; sourceTree = "<group>"; };
+		E697BA8427E78003008A7CC2 /* PetGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGridView.swift; sourceTree = "<group>"; };
 		E6B10F5227E6B37A00D666CE /* SwiftUI-Pet-Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Pet-Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B10F5527E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Pet_AdoptionApp.swift; sourceTree = "<group>"; };
 		E6B10F5727E6B37A00D666CE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -50,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6857D6727E7A22F00A7D865 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E6857D6527E79E2E00A7D865 /* TabBarItem.swift */,
+				E6857D6127E79DA700A7D865 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E697BA7F27E73C43008A7CC2 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				E697BA8027E73C4F008A7CC2 /* PetSearchBar.swift */,
+				E697BA8227E73CF7008A7CC2 /* PetTypeSegmentedView.swift */,
+				E697BA8427E78003008A7CC2 /* PetGridView.swift */,
+				E6857D5D27E7911000A7D865 /* PetView.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
 		E6B10F4927E6B37A00D666CE = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +132,9 @@
 		E6B10F6427E6B58500D666CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E6B10F7827E6D0F500D666CE /* Other */,
+				E6857D6727E7A22F00A7D865 /* TabBar */,
+				E697BA7F27E73C43008A7CC2 /* Pet */,
+				E6B10F7627E6D0E400D666CE /* Page */,
 				E6B10F7727E6D0F000D666CE /* Core */,
 			);
 			path = Views;
@@ -146,16 +182,9 @@
 			children = (
 				E6B10F5727E6B37A00D666CE /* WelcomeView.swift */,
 				E6B10F7C27E6D25200D666CE /* HomeView.swift */,
+				E6857D5F27E7946800A7D865 /* MasterView.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		E6B10F7827E6D0F500D666CE /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E6B10F7627E6D0E400D666CE /* Page */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,17 +257,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6857D6227E79DA700A7D865 /* TabBarView.swift in Sources */,
 				E6B10F6D27E6BE1000D666CE /* View+RoundedCorner.swift in Sources */,
 				E6B10F7F27E6D28E00D666CE /* SplashView.swift in Sources */,
+				E6857D6027E7946800A7D865 /* MasterView.swift in Sources */,
 				E6B10F6F27E6C44100D666CE /* SplashPage.swift in Sources */,
 				E6B10F5827E6B37A00D666CE /* WelcomeView.swift in Sources */,
+				E697BA8527E78003008A7CC2 /* PetGridView.swift in Sources */,
 				E6B10F7127E6CF9F00D666CE /* PagingView.swift in Sources */,
 				E6B10F7327E6CFD600D666CE /* PageControlView.swift in Sources */,
 				E6B10F6B27E6B5DF00D666CE /* Pet.swift in Sources */,
 				E6B10F7527E6D03C00D666CE /* PageNavigationButtonsView.swift in Sources */,
+				E6857D5E27E7911000A7D865 /* PetView.swift in Sources */,
+				E6857D6627E79E2E00A7D865 /* TabBarItem.swift in Sources */,
 				E6B10F7D27E6D25200D666CE /* HomeView.swift in Sources */,
+				E697BA8127E73C4F008A7CC2 /* PetSearchBar.swift in Sources */,
 				E6B10F6927E6B5AE00D666CE /* Color+Extension.swift in Sources */,
 				E6B10F5627E6B37A00D666CE /* SwiftUI_Pet_AdoptionApp.swift in Sources */,
+				E697BA8327E73CF7008A7CC2 /* PetTypeSegmentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
